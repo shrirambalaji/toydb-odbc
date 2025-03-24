@@ -1,0 +1,17 @@
+[package]
+name = "toydb-odbc"
+version = "0.1.0"
+edition = "2021"
+description = "ODBC driver for ToyDB"
+license = "MIT"
+include = ["**/*.rs", "Cargo.toml"]
+
+[lib]
+name = "toydb_odbc"
+path = "src/lib.rs"
+# crate-type = ["cdylib"]
+
+
+[dependencies]
+odbc-sys = "0.25.0"
+toydb = { git = "https://github.com/erikgrinaker/toydb" }
